@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    line-height: 18px;
+    font-family: sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.area-login, .area-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.area-info{
+    background-color: #0056fb;
+    height: 100%;
+    text-align: center;
+}
+
+.area-info h1{
+    color: #FFF;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.area-info p{
+    font-size: 16px;
+    color: #fff;
+}
+
+.area-login{
+    background-color: #ffffff;
+    padding: 20px 0;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    border: none;
+}
+
+.account h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"], input[type="password"],input[type="email"]{
+    background-color: #FFF;
+    border: 1px solid #000000;
+    padding-left: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    columns: #000000;
+}
+
+input[type="submit"]{
+    height: 40px;
+    width: 300px;
+    font-size: 24px;
+    background-color: #0056fb;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover{
+    background-color: #0056b3;
+}
+
+input[type="submit"]:active{
+    transform: scale(0.90);
+}
+
+/*.checkbox-terms{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="checkbox"]{
+    margin-right: 10px;
+}
+*/
+
+@media (max-width: 1050px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    .area-info{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 550px){
+
+    .main img{
+        width: 300px;
+    }
+
+    .area-info h1{
+        font-size: 26px;
+    }
+
+    .area-info p{
+        font-size: 12px;
+    }
+}
